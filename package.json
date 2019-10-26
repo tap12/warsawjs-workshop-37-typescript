@@ -1,7 +1,7 @@
 {
     "name": "express.ts",
     "version": "1.0.0",
-    "description": "node with express boilerplate",
+    "description": "boilerplate",
     "main": "./bin/startup.js",
     "author": "tB",
     "license": "beerware",
@@ -26,7 +26,6 @@
     "devDependencies": {
         "@types/axios": "^0.14.0",
         "@types/dotenv": "^4.0.0",
-        "@types/express": "^4.16.0",
         "@types/jasmine": "^2.6.3",
         "@types/jest": "^21.1.6",
         "@types/lodash": "^4.14.92",
@@ -44,14 +43,12 @@
         "asyncawait": "^1.0.7",
         "axios": "^0.17.1",
         "dotenv": "^4.0.0",
-        "express": "^4.16.4",
         "git-rev": "^0.2.1",
         "inversify": "^4.1.0",
         "jasmine-core": "^2.6.1",
         "minimist": "^1.2.0",
         "os": "^0.1.1",
         "reflect-metadata": "^0.1.10",
-        "socket.io": "^2.1.1",
         "uuid": "^3.1.0"
     }
 }
