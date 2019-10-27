@@ -9,7 +9,7 @@ export const IoC = new Container();
 // // IoC.bind(Main).to(Main);
 // // IoC.bind(ILogger)
 
-IoC.bind(Main).toSelf();
+IoC.bind(Main).toSelf().inSingletonScope();
 IoC.bind(Logger).toSelf();
 
 

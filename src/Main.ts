@@ -14,7 +14,7 @@ export class Main
 
 function 
 
-    foo: string = 5;
+    // foo: string = 5;
 
     constructor(private _log: logger)
     { }
