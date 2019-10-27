@@ -1,8 +1,8 @@
 import 'reflect-metadata';
-import { Logger } from './../Logger';
+import { ConsoleLogger, ILogger } from './../Logger';
 import { Main } from './../Main';
 import {Container} from 'inversify';
-// import { Container } from 'inversify';
+import { Types } from './Types';
 
 export const IoC = new Container();
 
@@ -10,7 +10,7 @@ export const IoC = new Container();
 // // IoC.bind(ILogger)
 
 IoC.bind(Main).toSelf().inSingletonScope();
-IoC.bind(Logger).toSelf();
+IoC.bind(Types.ILogger).to(ConsoleLogger);
 
 
 // These two imports must go first!

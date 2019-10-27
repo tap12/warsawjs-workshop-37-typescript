@@ -8,7 +8,7 @@ export interface ILogger
 }
 
 @injectable()
-export class ConsoleLogger implements ILogger
+export class Logger implements ILogger
 {
     public log(text: string): void
     {
@@ -17,16 +17,16 @@ export class ConsoleLogger implements ILogger
 }
 
 
-@injectable()
-export class FileLogger implements ILogger
-{
-    log(str: string): void
-    {
-        console.log(text);
-    }
+// @injectable()
+// export class FileLogger implements ILogger
+// {
+//     log(str: string): void
+//     {
+//         console.log(text);
+//     }
 
-    public log(text: string): void
-    {
-        console.log('FILE', text);
-    }
-}
+//     public log(text: string): void
+//     {
+//         console.log('FILE', text);
+//     }
+// }
