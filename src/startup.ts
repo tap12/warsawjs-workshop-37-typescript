@@ -6,6 +6,19 @@ dotenv.config(); // Loads variables from '.env' file to process.env
 import { IoC } from './IoC/IoC';
 import { Main } from './Main';
 
+// import
+
+
+// constructor(...)
+// {
+
+// } 
+
+// public log(text: string): void
+// {
+//     console.log(text)
+// }
+
 
 (async () =>
 {
