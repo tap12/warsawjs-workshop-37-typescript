@@ -1,3 +1,20 @@
+// import { Container } from 'inversify';
+
+// export const IoC = new Container();
+
+// // IoC.bind(Main).to(Main);
+// // IoC.bind(ILogger)
+
+// IoC.bind(Main).toSelf();
+// IoC.bind(Logger).toSelf();
+
+
+
+
+
+
+
+
 // These two imports must go first!
 import 'reflect-metadata';
 import { Types } from './Types';
@@ -12,7 +29,7 @@ import { Main } from '../Main';
 import { IStartupArgs } from '../Services/Environment/IStartupArgs';
 import { StartupArgs } from '../Services/Environment/StartupArgs';
 
-const IoC = new Container();
+// const IoC = new Container();
 
 try
 {
