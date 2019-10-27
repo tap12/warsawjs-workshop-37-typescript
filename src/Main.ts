@@ -1,3 +1,4 @@
+import { Types } from './IoC/Types';
 import { injectable, inject } from 'inversify';
 
 class logger
@@ -12,15 +13,15 @@ class logger
 export class Main
 {
 
-function 
+// function 
 
     // foo: string = 5;
 
-    constructor(private _log: logger)
+    constructor(@inject(Types.ILogger) private _log: logger)
     { }
 
     public async Start(): Promise<void>
     {
-        console.log('start');
+        console.log('start!');
     }
 }
